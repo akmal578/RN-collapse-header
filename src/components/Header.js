@@ -4,8 +4,8 @@ import Add from '../assets/svg/Add';
 import Menu from '../assets/svg/Menu';
 import Search from '../assets/svg/Search';
 
-const Header = (props) => {
-  const {headerHeight} = props;
+const Header = () => {
+  const headerHeight = 116;
   return (
     <>
       <View
@@ -19,6 +19,7 @@ const Header = (props) => {
         <Text style={styles.conversation}>Conversations</Text>
         <Add />
       </View>
+
       <View
         style={[
           styles.subHeader,
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
   subHeader: {
     width: '100%',
     paddingHorizontal: 10,
-    backgroundColor: '#1c1c1c',
+    backgroundColor: '#282828',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
